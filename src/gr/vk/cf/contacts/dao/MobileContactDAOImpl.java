@@ -81,6 +81,8 @@ public class MobileContactDAOImpl {
         if (positionToDelete == -1)return false;
 
         System.arraycopy(contacts,positionToDelete + 1, contacts ,positionToDelete,pivot-positionToDelete);
+        pivot--;
+        return true;
     }
 
 
